@@ -21,7 +21,7 @@ Pretty soon it will be published to [NPM](http://npmjs.org/).
 
 # Usage
 
-Dribbble currently doesn't require any sort of auth key or access token. Still, this module is a constructor. This way, if things change and keys are required, the constructor would become more useful.
+Dribbble doesn't (yet) require any sort of auth key or access token. Still, this module is a constructor. This way, if things change and keys are required, the constructor would be utilized and legacy code would be less effected.
 
 Making a request looks something like this:
 
@@ -48,7 +48,7 @@ dribbble.player('44656', function(err, res, json, paging) {
 })
 ```
 
-### Player Shots
+### A Player's Shots
 
 ```js
 dribbble.playerShots('44656', function(err, res, json, paging) {
@@ -56,7 +56,7 @@ dribbble.playerShots('44656', function(err, res, json, paging) {
 })
 ```
 
-### Shots by Players Player is Following
+### Shots by Users Player is Following
 
 ```js
 dribbble.playerFollowingShots('44656', function(err, res, json, paging) {
@@ -72,7 +72,7 @@ dribbble.playerLikes('44656', function(err, res, json, paging) {
 })
 ```
 
-### Players that Follow the Player
+### Users that Follow the Player
 
 ```js
 dribbble.playerFollowers('44656', function(err, res, json, paging) {
@@ -80,7 +80,7 @@ dribbble.playerFollowers('44656', function(err, res, json, paging) {
 })
 ```
 
-### Players that the Player Follows
+### Users that the Player Follows
 
 ```js
 dribbble.playerFollows('44656', function(err, res, json, paging) {
@@ -88,7 +88,7 @@ dribbble.playerFollows('44656', function(err, res, json, paging) {
 })
 ```
 
-### Player Drafted by the Player
+### Users Drafted by the Player
 
 ```js
 dribbble.playerDraftees('44656', function(err, res, json, paging) {
@@ -101,7 +101,7 @@ dribbble.playerDraftees('44656', function(err, res, json, paging) {
 
 All of the shot-related functions, except for `list`, require a shot id.
 
-### Individual Shot
+### An Individual Shot's Profile
 
 ```js
 dribbble.shot('300230', function(err, res, json, paging) {
@@ -117,7 +117,7 @@ dribbble.shotRebounds('43424', function(err, res, json, paging) {
 })
 ```
 
-### Comments for a Shot
+### Comments on a Shot
 
 ```js
 dribbble.shotComments('43424', function(err, res, json, paging) {
@@ -127,7 +127,7 @@ dribbble.shotComments('43424', function(err, res, json, paging) {
 
 ### Lists of Shots
 
-This one is a bit different. It does not take a shot id. Instead, it takes the name of a list.
+This one is a bit different. It doesn't take a shot id. Instead it takes the name of a list.
 
 Possible names are `popular`, `debuts` and `everyone`. 
 
