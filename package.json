@@ -1,0 +1,26 @@
+{ 
+    "name": "Dribbble_API", 
+    "description": "Node.js wrapper for the Dribbble API", 
+    "version": "0.0.1", 
+    "author": "Tim Marshall <timothyjmarhall@gmail.com>",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/tmarshall/Dribbble-API.git"
+    },
+    "os": [ "osx", "linux" ], 
+    "directories": {  }, 
+    "main": "dribbble", 
+    "dependencies" : { 
+        "request": "*"
+    },
+    "engines": { 
+        "node" : ">=0.4.8" 
+    },
+    "bugs": { 
+        "url" : "http://github.com/tmarshall/Dribbble-API/issues" 
+    },
+    "licenses": [{
+        "type": "MIT",
+        "url": "http://github.com/tmarshall/Dribbble-API/raw/master/LICENSE"
+    }]
+}
