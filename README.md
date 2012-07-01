@@ -14,9 +14,13 @@ Currently the only real dependency is [Request](https://github.com/mikeal/reques
 
 # Installation
 
-Currently the only way to install this is by taking the code and sticking it in node_modules folder. 
+The easiest way to install is via [npm](http://npmjs.org/)
 
-Pretty soon it will be published to [NPM](http://npmjs.org/).
+```
+npm install dribbble-api
+```
+
+Otherwise, you can install this is by taking the code and sticking it in your node_modules folder. 
 
 
 # Usage
@@ -189,4 +193,3 @@ dribbble.list('popular', requestCallback)
 
 * User constructor, similar to the one in the [Facebook Graph API](https://github.com/tmarshall/Facebook-Graph-API#using-the-user-object)
 * Performance tweaks
-* publish to NPM
