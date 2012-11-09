@@ -7,7 +7,7 @@
         "type": "git",
         "url": "git://github.com/tmarshall/Dribbble-API.git"
     },
-    "os": [ "osx", "linux" ], 
+    "os": [ "darwin", "linux" ], 
     "directories": {  }, 
     "main": "dribbble", 
     "dependencies" : { 
