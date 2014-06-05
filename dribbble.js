@@ -91,10 +91,11 @@ function pregame(name, path) {
 				} catch(e) {}
 
 				if (
-					typeof body.pages === 'number' &&
-					typeof body.page === 'number'
+					// Dribbble's JSON object has the current page as string
+					typeof parseInt(body.pages) === 'number' &&
+					typeof parseInt(body.page) === 'number'
 				) {
-					if (body.page < body.pages) {
+					if (parseInt(body.page) < parseInt(body.pages)) {
 						options = options || {}
 
 						paging.next = function(callback) {
