@@ -1,15 +1,10 @@
-Dribbble Api 0.0.1
+Dribbble Api 0.0.2
 ==================
 
 
 # What's this?
 
 This is a node module, serving as Dribbble API wrapper. See the [Dribbble API docs](http://dribbble.com/api/) for more details.
-
-
-# Dependencies
-
-Currently the only real dependency is [Request](https://github.com/mikeal/request).
 
 
 # Installation
