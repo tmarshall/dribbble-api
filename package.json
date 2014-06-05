@@ -1,7 +1,7 @@
 { 
     "name": "Dribbble_API", 
     "description": "Node.js wrapper for the Dribbble API", 
-    "version": "0.0.1", 
+    "version": "0.0.2", 
     "author": "Tim Marshall <timothyjmarhall@gmail.com>",
     "repository": {
         "type": "git",
