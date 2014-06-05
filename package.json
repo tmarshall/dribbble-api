@@ -1,5 +1,5 @@
 { 
-    "name": "Dribbble_API", 
+    "name": "dribbble-api", 
     "description": "Node.js wrapper for the Dribbble API", 
     "version": "0.0.2", 
     "author": "Tim Marshall <timothyjmarhall@gmail.com>",
