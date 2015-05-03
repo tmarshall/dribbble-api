@@ -1,0 +1,11 @@
+.DS_Store
+**/.DS_Store
+*.log
+ignore/**
+nohup.out
+*/nohup.out
+nodemon.json
+*/nodemon.json
+npm_debug.log
+*/npm_debug.log
+node_modules
