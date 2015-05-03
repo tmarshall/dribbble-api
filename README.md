@@ -1,4 +1,4 @@
-Dribbble Api 0.0.2
+Dribbble Api 0.0.3 ![](https://travis-ci.org/tmarshall/dribbble-api.svg)
 ==================
 
 

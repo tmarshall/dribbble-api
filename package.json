@@ -1,26 +1,33 @@
 { 
-    "name": "dribbble-api", 
-    "description": "Node.js wrapper for the Dribbble API", 
-    "version": "0.0.2", 
-    "author": "Tim Marshall <timothyjmarhall@gmail.com>",
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/tmarshall/Dribbble-API.git"
-    },
-    "os": [ "darwin", "linux" ], 
-    "directories": {  }, 
-    "main": "dribbble", 
-    "dependencies" : { 
-        "request": "*"
-    },
-    "engines": { 
-        "node" : ">=0.4.8" 
-    },
-    "bugs": { 
-        "url" : "http://github.com/tmarshall/Dribbble-API/issues" 
-    },
-    "licenses": [{
-        "type": "MIT",
-        "url": "http://github.com/tmarshall/Dribbble-API/raw/master/LICENSE"
-    }]
+  "name": "dribbble-api", 
+  "description": "Node.js wrapper for the Dribbble API", 
+  "version": "0.0.3", 
+  "author": "Tim Marshall <timothyjmarhall@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tmarshall/Dribbble-API.git"
+  },
+  "scripts": {
+    "test": "grunt lint"
+  },
+  "dependencies" : { 
+    "request": "2.55.0"
+  },
+  "devDependencies": {
+    "grunt": "0.4.5",
+    "grunt-concurrent": "1.0.0",
+    "grunt-contrib-jshint": "0.11.0",
+    "grunt-jscs": "1.5.0",
+    "matchdep": "0.3.0"
+  },
+  "engines": { 
+    "node": ">=0.10.0" 
+  },
+  "bugs": { 
+    "url": "http://github.com/tmarshall/Dribbble-API/issues" 
+  },
+  "licenses": [{
+    "type": "MIT",
+    "url": "http://github.com/tmarshall/Dribbble-API/raw/master/LICENSE"
+  }]
 }
