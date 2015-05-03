@@ -1,26 +1,23 @@
 { 
-    "name": "dribbble-api", 
-    "description": "Node.js wrapper for the Dribbble API", 
-    "version": "0.0.2", 
-    "author": "Tim Marshall <timothyjmarhall@gmail.com>",
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/tmarshall/Dribbble-API.git"
-    },
-    "os": [ "darwin", "linux" ], 
-    "directories": {  }, 
-    "main": "dribbble", 
-    "dependencies" : { 
-        "request": "*"
-    },
-    "engines": { 
-        "node" : ">=0.4.8" 
-    },
-    "bugs": { 
-        "url" : "http://github.com/tmarshall/Dribbble-API/issues" 
-    },
-    "licenses": [{
-        "type": "MIT",
-        "url": "http://github.com/tmarshall/Dribbble-API/raw/master/LICENSE"
-    }]
+  "name": "dribbble-api", 
+  "description": "Node.js wrapper for the Dribbble API", 
+  "version": "0.0.3", 
+  "author": "Tim Marshall <timothyjmarhall@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tmarshall/Dribbble-API.git"
+  },
+  "dependencies" : { 
+    "request": "2.55.0"
+  },
+  "engines": { 
+    "node": ">=0.10.0" 
+  },
+  "bugs": { 
+    "url": "http://github.com/tmarshall/Dribbble-API/issues" 
+  },
+  "licenses": [{
+    "type": "MIT",
+    "url": "http://github.com/tmarshall/Dribbble-API/raw/master/LICENSE"
+  }]
 }
