@@ -127,38 +127,38 @@ function pregame(name, path) {
 }
 
 [{
-	name: 'shot',
-	path: 'shots/:id'
+  name: 'shot',
+  path: 'shots/:id'
 }, {
-	name: 'shotRebounds',
-	path: 'shots/:id/rebounds'
+  name: 'shotRebounds',
+  path: 'shots/:id/rebounds'
 }, {
-	name: 'shotComments',
-	path: 'shots/:id/comments'
+  name: 'shotComments',
+  path: 'shots/:id/comments'
 }, {
-	name: 'list',
-	path: 'shots/:list=popular,everyone,debuts'
+  name: 'list',
+  path: 'shots/:list=popular,everyone,debuts'
 }, {
-	name: 'player',
-	path: 'players/:id'
+  name: 'player',
+  path: 'players/:id'
 }, {
-	name: 'playerShots',
-	path: 'players/:id/shots'
+  name: 'playerShots',
+  path: 'players/:id/shots'
 }, {
-	name: 'playerFollowingShots',
-	path: 'players/:id/shots/following'
+  name: 'playerFollowingShots',
+  path: 'players/:id/shots/following'
 }, {
-	name: 'playerLikes',
-	path: 'players/:id/shots/likes'
+  name: 'playerLikes',
+  path: 'players/:id/shots/likes'
 }, {
-	name: 'playerFollowers',
-	path: 'players/:id/followers'
+  name: 'playerFollowers',
+  path: 'players/:id/followers'
 }, {
-	name: 'playerFollows',
-	path: 'players/:id/following'
+  name: 'playerFollows',
+  path: 'players/:id/following'
 }, {
-	name: 'playerDraftees',
-	path: 'players/:id/draftees'
+  name: 'playerDraftees',
+  path: 'players/:id/draftees'
 }].forEach(function(definition) {
   court.prototype[definition.name] = pregame(definition.name, definition.path);
 });
