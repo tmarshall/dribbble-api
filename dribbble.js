@@ -85,41 +85,45 @@ function pregame(name, path) {
 			request('http://api.dribbble.com/' + adjustedPath + (options ? '?' + querystring.stringify(options) : ''), function(err, res, body) {
 				var paging = {}
 
-				// not sure if this try catch is needed (or a good idea)
-				try {
-					body = JSON.parse(body)
-				} catch(e) {}
+				if (body) {
+					// not sure if this try catch is needed (or a good idea)
+					try {
+						body = JSON.parse(body)
+					} catch(e) {}
 
-				if (
-					// Dribbble's JSON object has the current page as string
-					typeof parseInt(body.pages) === 'number' &&
-					typeof parseInt(body.page) === 'number'
-				) {
-					if (parseInt(body.page) < parseInt(body.pages)) {
-						options = options || {}
+					if (
+						// Dribbble's JSON object has the current page as string
+						typeof parseInt(body.pages) === 'number' &&
+						typeof parseInt(body.page) === 'number'
+					) {
+						if (parseInt(body.page) < parseInt(body.pages)) {
+							options = options || {}
 
-						paging.next = function(callback) {
-							options.page = body.page + 1
+							paging.next = function(callback) {
+								options.page = body.page + 1
 
-							gameon(options, callback)
+								gameon(options, callback)
 
-							return lex
+								return lex
+							}
+						}
+
+						if (body.page > 1) {
+							options = options || {}
+
+							paging.previous = function(callback) {
+								options.page = body.page - 1
+
+								gameon(options, callback)
+
+								return lex
+							}
 						}
 					}
-
-					if (body.page > 1) {
-						options = options || {}
-
-						paging.previous = function(callback) {
-							options.page = body.page - 1
-
-							gameon(options, callback)
-
-							return lex
-						}
-					}
+				} else {
+					err = "No response from Dribbble API";
 				}
-
+				
 				callback(err, res, body, paging)
 			})
 		}(options, callback)
